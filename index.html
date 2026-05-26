@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodExpress - Food Delivery Website</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <div id="toastBox"></div>
+
+    <button id="themeToggle" class="theme-toggle">
+        <i class="fa-solid fa-moon"></i>
+    </button>
+
+    <button id="backToTop" class="back-top-btn">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <nav class="navbar navbar-expand-lg fixed-top premium-navbar">
+
+        <div class="container">
+
+            <!-- Logo -->
+
+            <a class="navbar-brand brand-logo" href="index.html">
+
+                <div class="logo-box">
+                    <i class="fa-solid fa-burger"></i>
+                </div>
+
+                <span>FoodExpress</span>
+
+            </a>
+
+            <!-- Toggle -->
+
+            <button class="navbar-toggler menu-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+            <!-- Navbar -->
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <!-- Menu -->
+
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="foodmenu.html">Menu</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="restaurant.html">Restaurants</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Offers</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Delivery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+
+                </ul>
+
+                <!-- Right Buttons -->
+
+                <div class="d-flex align-items-center nav-right">
+
+                    <!-- Search -->
+                    <div class="nav-search">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        <input type="text" placeholder="Search food...">
+
+                    </div>
+
+                    <!-- Wishlist -->
+
+                    <a href="#" class="nav-icon">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </a>
+
+                    <!-- Cart -->
+
+                    <a href="cart.html" class="nav-icon cart-icon">
+
+                        <i class="fa-solid fa-cart-shopping"></i>
+
+                        <span>2</span>
+
+                    </a>
+
+                    <!-- Login -->
+
+                    <a href="#" class="login-btn">
+
+                        Login
+
+                    </a>
+
+                    <!-- Signup -->
+
+                    <a href="#" class="signup-btn">
+
+                        Sign Up
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-lg-6 hero-content">
+                    <span class="badge bg-warning text-dark px-3 py-2 mb-3">Fastest Food Delivery</span>
+                    <h1>Delicious Food Delivered To Your Doorstep</h1>
+                    <p>
+                        Order your favorite meals from top restaurants near you. Fresh, hot and delivered super fast.
+                    </p>
+
+                    <div class="search-food-box">
+                        <input type="text" placeholder="Search pizza, burger, biryani...">
+                        <button>Search</button>
+                    </div>
+
+                    <div class="hero-buttons mt-4">
+                        <a href="menu.html" class="btn btn-warning btn-lg rounded-pill px-5 fw-bold">Order Now</a>
+                        <a href="#" class="btn btn-outline-light btn-lg rounded-pill px-5 ms-2">View Menu</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 text-center mt-5 mt-lg-0">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=900&q=80"
+                        class="img-fluid hero-img" alt="Pizza">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="category-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-badge">Food Categories</span>
+                <h2 class="fw-bold mt-3">Explore By Taste</h2>
+                <p class="text-muted">Choose from our most loved food categories.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-6 col-md-3">
+                    <div class="category-card">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80"
+                            alt="Burger">
+                        <h5>Burgers</h5>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="category-card">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80"
+                            alt="Pizza">
+                        <h5>Pizza</h5>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="category-card">
+                        <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?auto=format&fit=crop&w=800&q=80"
+                            alt="Pasta">
+                        <h5>Pasta</h5>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="category-card">
+                        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=800&q=80"
+                            alt="Dessert">
+                        <h5>Desserts</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="food-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-badge">Popular Dishes</span>
+                <h2 class="fw-bold mt-3">Best Selling Food Items</h2>
+                <p class="text-muted">Fresh meals prepared by top-rated restaurants.</p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="food-card">
+                        <img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?auto=format&fit=crop&w=900&q=80"
+                            alt="Pizza">
+                        <div class="food-body">
+                            <div class="d-flex justify-content-between">
+                                <span class="food-tag">Italian</span>
+                                <span class="rating"><i class="fa-solid fa-star"></i> 4.8</span>
+                            </div>
+                            <h5>Cheese Burst Pizza</h5>
+                            <p>Loaded with mozzarella cheese, fresh veggies and spicy sauce.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4>₹299</h4>
+                                <button class="btn btn-dark rounded-pill">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="food-card">
+                        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=900&q=80"
+                            alt="Burger">
+                        <div class="food-body">
+                            <div class="d-flex justify-content-between">
+                                <span class="food-tag">Fast Food</span>
+                                <span class="rating"><i class="fa-solid fa-star"></i> 4.7</span>
+                            </div>
+                            <h5>Double Cheese Burger</h5>
+                            <p>Crispy patty, cheese layers, fresh lettuce and special sauce.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4>₹199</h4>
+                                <button class="btn btn-dark rounded-pill">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="food-card">
+                        <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=900&q=80"
+                            alt="Biryani">
+                        <div class="food-body">
+                            <div class="d-flex justify-content-between">
+                                <span class="food-tag">Indian</span>
+                                <span class="rating"><i class="fa-solid fa-star"></i> 4.9</span>
+                            </div>
+                            <h5>Hyderabadi Biryani</h5>
+                            <p>Authentic spicy biryani served with raita and fresh salad.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4>₹249</h4>
+                                <button class="btn btn-dark rounded-pill">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section py-5">
+        <div class="container">
+            <div class="row g-4 text-center">
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <i class="fa-solid fa-truck-fast"></i>
+                        <h5>Fast Delivery</h5>
+                        <p>Get food delivered hot and fresh within minutes.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <i class="fa-solid fa-bowl-food"></i>
+                        <h5>Fresh Food</h5>
+                        <p>Prepared by trusted restaurants with quality ingredients.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <i class="fa-solid fa-shield-heart"></i>
+                        <h5>Safe Payment</h5>
+                        <p>Secure online payment and cash on delivery options.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="offer-section py-5">
+        <div class="container">
+            <div class="offer-box text-center">
+                <h2>Get 40% Off On Your First Order</h2>
+                <p>Use coupon code <strong>FOOD40</strong> and enjoy delicious meals today.</p>
+                <a href="menu.html" class="btn btn-warning rounded-pill px-5 fw-bold">Order Now</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row g-5">
+
+                <div class="col-lg-4">
+                    <h3 class="footer-logo">
+                        <i class="fa-solid fa-burger text-warning"></i> FoodExpress
+                    </h3>
+                    <p class="footer-text">
+                        FoodExpress delivers fresh and delicious food from your favorite restaurants directly to your
+                        doorstep.
+                    </p>
+
+                    <div class="social-icons mt-4">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="#">Restaurants</a></li>
+                        <li><a href="#">Offers</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Contact</h5>
+                    <ul class="footer-contact">
+                        <li><i class="fa-solid fa-location-dot"></i> Solapur, Maharashtra, India</li>
+                        <li><i class="fa-solid fa-envelope"></i> support@foodexpress.com</li>
+                        <li><i class="fa-solid fa-phone"></i> +91 9876543210</li>
+                        <li><i class="fa-solid fa-clock"></i> 10AM - 11PM</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3">
+                    <h5 class="footer-title">Newsletter</h5>
+                    <p class="footer-text">Subscribe for offers, coupons and restaurant updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 FoodExpress. All Rights Reserved.</p>
+                <div class="payment-icons">
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                    <i class="fa-brands fa-google-pay"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

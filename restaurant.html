@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants - FoodExpress</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <div id="toastBox"></div>
+
+    <button id="themeToggle" class="theme-toggle">
+        <i class="fa-solid fa-moon"></i>
+    </button>
+
+    <button id="backToTop" class="back-top-btn">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <nav class="navbar navbar-expand-lg fixed-top premium-navbar">
+        <div class="container">
+
+            <a class="navbar-brand brand-logo" href="index.html">
+                <div class="logo-box">
+                    <i class="fa-solid fa-burger"></i>
+                </div>
+                <span>FoodExpress</span>
+            </a>
+
+            <button class="navbar-toggler menu-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="restaurant.html">Restaurants</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Offers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Delivery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+
+                <div class="d-flex align-items-center nav-right">
+                    <div class="nav-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search restaurant...">
+                    </div>
+
+                    <a href="#" class="nav-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </a>
+
+                    <a href="cart.html" class="nav-icon cart-icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>2</span>
+                    </a>
+
+                    <a href="#" class="login-btn">Login</a>
+                    <a href="#" class="signup-btn">Sign Up</a>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-hero restaurant-hero">
+        <div class="container text-center">
+            <span class="section-badge">Top Restaurants</span>
+            <h1>Popular Restaurants Near You</h1>
+            <p>Explore trusted restaurants with ratings, delivery time and best dishes.</p>
+        </div>
+    </section>
+
+    <section class="restaurant-section py-5">
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <span class="section-badge">Restaurants</span>
+                <h2 class="fw-bold mt-3 text-white">Choose Your Favorite Restaurant</h2>
+                <p class="text-light">Fresh food, fast delivery and trusted restaurant partners.</p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="restaurant-card">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=80"
+                            alt="Urban Spice">
+                        <div class="restaurant-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5>Urban Spice</h5>
+                                <span class="rest-rating"><i class="fa-solid fa-star"></i> 4.8</span>
+                            </div>
+                            <p>Indian, Mughlai, Biryani</p>
+                            <div class="restaurant-info">
+                                <span><i class="fa-solid fa-clock"></i> 25-30 min</span>
+                                <span><i class="fa-solid fa-location-dot"></i> 2.1 km</span>
+                            </div>
+                            <div class="restaurant-offer">50% OFF up to ₹100</div>
+                            <a href="menu.html" class="btn order-btn w-100">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="restaurant-card">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80"
+                            alt="Royal Kitchen">
+                        <div class="restaurant-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5>Royal Kitchen</h5>
+                                <span class="rest-rating"><i class="fa-solid fa-star"></i> 4.7</span>
+                            </div>
+                            <p>North Indian, Chinese, Thali</p>
+                            <div class="restaurant-info">
+                                <span><i class="fa-solid fa-clock"></i> 30-35 min</span>
+                                <span><i class="fa-solid fa-location-dot"></i> 3.4 km</span>
+                            </div>
+                            <div class="restaurant-offer">Free Delivery</div>
+                            <a href="menu.html" class="btn order-btn w-100">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="restaurant-card">
+                        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=900&q=80"
+                            alt="Pizza Planet">
+                        <div class="restaurant-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5>Pizza Planet</h5>
+                                <span class="rest-rating"><i class="fa-solid fa-star"></i> 4.6</span>
+                            </div>
+                            <p>Pizza, Pasta, Garlic Bread</p>
+                            <div class="restaurant-info">
+                                <span><i class="fa-solid fa-clock"></i> 20-25 min</span>
+                                <span><i class="fa-solid fa-location-dot"></i> 1.8 km</span>
+                            </div>
+                            <div class="restaurant-offer">Buy 1 Get 1 Pizza</div>
+                            <a href="menu.html" class="btn order-btn w-100">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="restaurant-card">
+                        <img src="https://images.unsplash.com/photo-1555992336-03a23c7b20ee?auto=format&fit=crop&w=900&q=80"
+                            alt="Burger Hub">
+                        <div class="restaurant-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5>Burger Hub</h5>
+                                <span class="rest-rating"><i class="fa-solid fa-star"></i> 4.5</span>
+                            </div>
+                            <p>Burgers, Fries, Beverages</p>
+                            <div class="restaurant-info">
+                                <span><i class="fa-solid fa-clock"></i> 18-22 min</span>
+                                <span><i class="fa-solid fa-location-dot"></i> 1.2 km</span>
+                            </div>
+                            <div class="restaurant-offer">20% OFF on Combos</div>
+                            <a href="menu.html" class="btn order-btn w-100">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="restaurant-card">
+                        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=900&q=80"
+                            alt="Green Bowl">
+                        <div class="restaurant-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5>Green Bowl</h5>
+                                <span class="rest-rating"><i class="fa-solid fa-star"></i> 4.9</span>
+                            </div>
+                            <p>Healthy Food, Salads, Vegan</p>
+                            <div class="restaurant-info">
+                                <span><i class="fa-solid fa-clock"></i> 25-28 min</span>
+                                <span><i class="fa-solid fa-location-dot"></i> 2.8 km</span>
+                            </div>
+                            <div class="restaurant-offer">Healthy Meal @ ₹149</div>
+                            <a href="menu.html" class="btn order-btn w-100">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="restaurant-card">
+                        <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=900&q=80"
+                            alt="Taste Junction">
+                        <div class="restaurant-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5>Taste Junction</h5>
+                                <span class="rest-rating"><i class="fa-solid fa-star"></i> 4.4</span>
+                            </div>
+                            <p>Street Food, Snacks, Chaat</p>
+                            <div class="restaurant-info">
+                                <span><i class="fa-solid fa-clock"></i> 15-20 min</span>
+                                <span><i class="fa-solid fa-location-dot"></i> 1.5 km</span>
+                            </div>
+                            <div class="restaurant-offer">Snacks starting ₹79</div>
+                            <a href="menu.html" class="btn order-btn w-100">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="restaurant-card">
+                        <img src="https://images.unsplash.com/photo-1481833761820-0509d3217039?auto=format&fit=crop&w=900&q=80"
+                            alt="Cafe Aroma">
+                        <div class="restaurant-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5>Cafe Aroma</h5>
+                                <span class="rest-rating"><i class="fa-solid fa-star"></i> 4.6</span>
+                            </div>
+                            <p>Coffee, Sandwiches, Desserts</p>
+                            <div class="restaurant-info">
+                                <span><i class="fa-solid fa-clock"></i> 20-25 min</span>
+                                <span><i class="fa-solid fa-location-dot"></i> 2.3 km</span>
+                            </div>
+                            <div class="restaurant-offer">Combo Meals Available</div>
+                            <a href="menu.html" class="btn order-btn w-100">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="restaurant-card">
+                        <img src="https://images.unsplash.com/photo-1579027989536-b7b1f875659b?auto=format&fit=crop&w=900&q=80"
+                            alt="BBQ Nation">
+                        <div class="restaurant-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5>BBQ Nation</h5>
+                                <span class="rest-rating"><i class="fa-solid fa-star"></i> 4.7</span>
+                            </div>
+                            <p>BBQ, Grill, Non-Veg Specials</p>
+                            <div class="restaurant-info">
+                                <span><i class="fa-solid fa-clock"></i> 35-40 min</span>
+                                <span><i class="fa-solid fa-location-dot"></i> 4.1 km</span>
+                            </div>
+                            <div class="restaurant-offer">Flat ₹120 OFF</div>
+                            <a href="menu.html" class="btn order-btn w-100">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="restaurant-card">
+                        <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=900&q=80"
+                            alt="South Treat">
+                        <div class="restaurant-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5>South Treat</h5>
+                                <span class="rest-rating"><i class="fa-solid fa-star"></i> 4.8</span>
+                            </div>
+                            <p>South Indian, Dosa, Idli</p>
+                            <div class="restaurant-info">
+                                <span><i class="fa-solid fa-clock"></i> 20-24 min</span>
+                                <span><i class="fa-solid fa-location-dot"></i> 2.0 km</span>
+                            </div>
+                            <div class="restaurant-offer">Breakfast Combos</div>
+                            <a href="menu.html" class="btn order-btn w-100">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row g-5">
+
+                <div class="col-lg-4">
+                    <h3 class="footer-logo">
+                        <i class="fa-solid fa-burger text-warning"></i> FoodExpress
+                    </h3>
+                    <p class="footer-text">
+                        FoodExpress delivers fresh and delicious food from your favorite restaurants directly to your
+                        doorstep.
+                    </p>
+                    <div class="social-icons mt-4">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="restaurant.html">Restaurants</a></li>
+                        <li><a href="#">Offers</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Contact</h5>
+                    <ul class="footer-contact">
+                        <li><i class="fa-solid fa-location-dot"></i> Solapur, Maharashtra, India</li>
+                        <li><i class="fa-solid fa-envelope"></i> support@foodexpress.com</li>
+                        <li><i class="fa-solid fa-phone"></i> +91 9876543210</li>
+                        <li><i class="fa-solid fa-clock"></i> 10AM - 11PM</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3">
+                    <h5 class="footer-title">Newsletter</h5>
+                    <p class="footer-text">Subscribe for offers, coupons and restaurant updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 FoodExpress. All Rights Reserved.</p>
+                <div class="payment-icons">
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                    <i class="fa-brands fa-google-pay"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
